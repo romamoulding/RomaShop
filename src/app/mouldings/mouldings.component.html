@@ -1,5 +1,23 @@
 <h2>Moulding List test</h2>
 <div *ngIf="mouldings">
-<app-moulding-search></app-moulding-search>    
-<div *ngFor="let moulding of mouldings.items"><span class="badge">{{moulding.sku}}</span> {{moulding.name}}</div>
+<app-moulding-search></app-moulding-search>
+<div class="mouldingContainer">   
+    <div *ngFor="let moulding of mouldings.items" class="mouldingCard">
+            <div class="mouldingHover">
+                <div class="mouldingStatusCon">
+                    <div class="mouldingStatus">{{moulding.custom_attributes[26].value}}</div>
+                    <div class="mouldingSelect">T</div>
+                </div>
+            
+                <div class="mouldingImage">
+                    <img src={{moulding.custom_attributes[27].value}}>
+                </div>
+            </div>
+            <div class="mouldingText">
+                <div class="mouldingSku">{{moulding.sku}}</div>
+                <div class="mouldingName">{{moulding.name}}</div>
+                <div class="mouldingColor">Color</div>
+            </div>
+    </div>
+</div> 
 </div>

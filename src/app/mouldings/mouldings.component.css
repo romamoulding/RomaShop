@@ -1,0 +1,43 @@
+.mouldingContainer {
+     display: flex;
+     flex-wrap: wrap;
+    justify-content: space-between;
+    }
+.mouldingContainer .mouldingCard {
+    width: 24%; 
+    position: relative;
+    margin-top: 20px;
+    text-align: left;
+    
+    
+}
+.mouldingContainer .mouldingCard .mouldingHover { border: 1px solid #f9fafc; cursor: pointer}
+.mouldingContainer .mouldingCard .mouldingHover:hover { border: 1px solid #d0d6da }
+
+.mouldingContainer .mouldingCard .mouldingImage { padding: 0 1.2em 1.2em; background-color: #f9fafc;}
+.mouldingContainer .mouldingCard img { width: 100%}
+
+.mouldingContainer .mouldingCard .mouldingStatusCon { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.2em;
+    padding-bottom: 0;
+    background-color: #f9fafc;
+
+ }
+.mouldingContainer .mouldingCard .mouldingStatusCon div { }
+.mouldingContainer .mouldingCard .mouldingStatus { 
+    font-size: .7em;
+    text-transform: capitalize;
+    padding: 0 11px;
+    border-radius: 8px;
+    background-color: #5857a4;
+    color: #fff;
+    line-height: 1.6em;
+    font-weight: 700;
+    /* width: 50px */
+}
+.mouldingContainer .mouldingCard .mouldingSelect {
+    font-size: .7em;
+ }
