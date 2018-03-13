@@ -9,13 +9,15 @@ import { CartComponent } from './cart/cart.component';
 import { CartItemComponent } from './cart-item/cart-item.component';
 import {MouldingService} from './moulding.service';
 import { AppRoutingModule } from './/app-routing.module';
+import { MouldingSearchComponent } from './moulding-search/moulding-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MouldingsComponent,
     CartComponent,
-    CartItemComponent
+    CartItemComponent,
+    MouldingSearchComponent
   ],
   imports: [
     BrowserModule,

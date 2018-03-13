@@ -1,4 +1,5 @@
 <h2>Moulding List test</h2>
 <div *ngIf="mouldings">
+<app-moulding-search></app-moulding-search>    
 <div *ngFor="let moulding of mouldings.items"><span class="badge">{{moulding.sku}}</span> {{moulding.name}}</div>
 </div>

@@ -16,17 +16,37 @@ import { Moulding } from './moulding';
 
 export class MouldingService {
 
-  private appUrl = 'http://beta-store.romamoulding.com/api/getproducts';
+  constructor(private http: HttpClient) { }
+
+  private appUrl = 'http://beta-store.romamoulding.com/';
 
   getMouldings(): Observable<Moulding[]> {
-    return this.http.get<Moulding[]>(this.appUrl)
+    return this.http.get<Moulding[]>(this.appUrl+"api/getproducts")
     .pipe(
       tap(mouldings => this.log(`fetched mouldings`)),
       catchError(this.handleError('getMouldings', []))
     );
   }
 
-  constructor(private http: HttpClient) { }
+
+
+  
+
+
+  searchMouldings(term: string): Observable<Moulding[]> {
+    if (!term.trim()) {
+      // if not search term, return empty hero array.
+      return of([]);
+    }else{
+      return of([]);
+    }
+    
+    
+  }
+
+
+
+  
 
 
 
@@ -57,4 +77,6 @@ export class MouldingService {
     console.log(message);
   }
 
+
 }
+
