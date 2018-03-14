@@ -1,9 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 body {
     color: #495762;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
+    margin: 0
 }
 h1 { font-size: 2.8em; font-weight: 700}
 h2 { font-size: 2.3em;} 
+
+.clear {clear: both}
+
+.widthContainer { width: 80%; margin: auto}
+/******** Background Color Style ******/
+.lighterGrey {background-color: #f9fafc;}
+
+
+
+/***** Moulding Card Style *****/
+.skuNumber { font-size: 1.2em; font-weight: 700; margin-bottom: .4em}
+#search-box { 
+    font-size: 1.2em;
+    width: 100%;
+    border: 0;
+    /* padding: .8em 0; */
+    padding-left: 30px;
+    /* background-image: url('../img/search.png'); */
+    background-position: 0px 17px;
+    background-repeat: no-repeat;
+    background-size: 17px;
+    line-height: 2.5em;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #c1c7cb;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #c1c7cb;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #c1c7cb;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #c1c7cb;
+  }
+
+  /******** Page Heading ********/
+  .pageHeading { text-align: left }
+  .pageHEading h1 { }
+  .pageHEading h2 { }
+  .pageHEading h3 { }
+  .pageHEading h4 {  }

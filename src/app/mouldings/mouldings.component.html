@@ -1,21 +1,27 @@
-<h2>Moulding List test</h2>
+<div class="moduleHeading pageHeading">
+    <h2>Quick Sample</h2>
+    <h4>Click to slect corner samples</h4>
+</div>
+
+
 <div *ngIf="mouldings">
 <app-moulding-search></app-moulding-search>
 <app-moulding-filters></app-moulding-filters>
-<div class="mouldingContainer">   
+<div class="mouldingContainer widthContainer">   
     <div *ngFor="let moulding of mouldings.items" class="mouldingCard">
-            <div class="mouldingHover">
+            <div class="mouldingHover lighterGrey">
                 <div class="mouldingStatusCon">
-                    <div class="mouldingStatus">{{moulding.custom_attributes[26].value}}</div>
-                    <div class="mouldingSelect">T</div>
+                    <div class="mouldingStatus" >{{moulding.custom_attributes[26].value}}</div>
+                    <div class="mouldingSelect" >T</div>
+                    <div class="clear"></div>
                 </div>
-            
-                <div class="mouldingImage">
-                    <img src={{moulding.custom_attributes[27].value}}>
+                <div class="mouldingImage" 
+                    [ngStyle]="{'background-image': 'url('+ moulding.custom_attributes[27].value +')'}"
+                    > 
                 </div>
             </div>
             <div class="mouldingText">
-                <div class="mouldingSku">{{moulding.sku}}</div>
+                <div class="mouldingSku skuNumber">{{moulding.sku}}</div>
                 <div class="mouldingName">{{moulding.name}}</div>
                 <div class="mouldingColor">Color</div>
             </div>
