@@ -10,6 +10,7 @@ import { CartItemComponent } from './cart-item/cart-item.component';
 import {MouldingService} from './moulding.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { MouldingSearchComponent } from './moulding-search/moulding-search.component';
+import { MouldingFiltersComponent } from './moulding-filters/moulding-filters.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MouldingSearchComponent } from './moulding-search/moulding-search.compo
     MouldingsComponent,
     CartComponent,
     CartItemComponent,
-    MouldingSearchComponent
+    MouldingSearchComponent,
+    MouldingFiltersComponent
   ],
   imports: [
     BrowserModule,
