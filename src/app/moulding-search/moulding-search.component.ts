@@ -8,6 +8,8 @@ import {
 debounceTime, distinctUntilChanged, switchMap
 } from 'rxjs/operators';
 
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 import { Moulding } from '../moulding';
 import { MouldingService } from '../moulding.service';
 

@@ -1,7 +1,13 @@
 <div id="search-component">
 
+<div class="fields-container">
+    <mat-form-field>
+        <mat-placeholder><mat-icon>search</mat-icon> <b>Search</b></mat-placeholder>
+        <input matInput>
+        
+      </mat-form-field>
 
-<input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+    </div>
 
 <ul class="search-result">
 <li *ngFor="let moulding of mouldings$ | async" >

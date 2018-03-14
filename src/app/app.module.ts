@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule }    from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -11,6 +11,10 @@ import {MouldingService} from './moulding.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { MouldingSearchComponent } from './moulding-search/moulding-search.component';
 import { MouldingFiltersComponent } from './moulding-filters/moulding-filters.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule,MatSelectModule, MatPlaceholder} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,18 @@ import { MouldingFiltersComponent } from './moulding-filters/moulding-filters.co
     CartComponent,
     CartItemComponent,
     MouldingSearchComponent,
-    MouldingFiltersComponent
+    MouldingFiltersComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,    
+    HttpClientModule,  
+    MatFormFieldModule,
+    MatInputModule,
+    BrowserAnimationsModule,
+    MatSelectModule, ReactiveFormsModule,MatIconModule
    
   ],
  
