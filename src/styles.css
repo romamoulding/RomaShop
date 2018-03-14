@@ -44,8 +44,8 @@ h2 { font-size: 2.3em;}
   }
 
   /******** Page Heading ********/
-  .pageHeading { text-align: left }
-  .pageHEading h1 { }
-  .pageHEading h2 { }
-  .pageHEading h3 { }
-  .pageHEading h4 {  }
+  .pageHeading { text-align: left; padding: 2em 0  }
+  .pageHeading h1 { }
+  .pageHeading h2 {  font-size: 1.8em; font-weight: 700 ; margin: 5px 0;}
+  .pageHeading h3 { }
+  .pageHeading h4 { font-size: 1.2em; font-weight: 300 ; margin: 0; }
