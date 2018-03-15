@@ -12,7 +12,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { MouldingSearchComponent } from './moulding-search/moulding-search.component';
 import { MouldingFiltersComponent } from './moulding-filters/moulding-filters.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule,MatSelectModule, MatPlaceholder} from '@angular/material';
+import {MatInputModule,MatSelectModule, MatPlaceholder, MatButtonModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 
@@ -34,7 +34,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatFormFieldModule,
     MatInputModule,
     BrowserAnimationsModule,
-    MatSelectModule, ReactiveFormsModule,MatIconModule
+    MatSelectModule, ReactiveFormsModule,MatIconModule, MatButtonModule
    
   ],
  

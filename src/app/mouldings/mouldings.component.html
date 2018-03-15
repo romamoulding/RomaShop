@@ -1,8 +1,17 @@
-<div class="moduleHeading pageHeading widthContainer">
-    <h2>Quick Sample</h2>
-    <h4>Click to select corner samples</h4>
+<div class="widthContainer">
+    <div class="moduleHeading pageHeading">
+        <h2>Quick Sample</h2>
+        <h4>Click to select corner samples</h4>
+    </div>
+    <div class="buttonContainer">
+        <button mat-button  class="primaryButton ">Review Selected Samples</button>
+    </div>
+    <div class="clear"></div>
 </div>
-
+<!-- Smaple Buttons - for viewing only 
+<button mat-button  class="primaryButton buttonEqual">Primary Button</button>
+<button mat-button class="secButton">Secondary Button</button>
+<button mat-button class="actionButton">Action Button</button> -->
 
 <div *ngIf="mouldings">
 <app-moulding-search></app-moulding-search>

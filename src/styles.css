@@ -46,8 +46,31 @@ h2 { font-size: 2.3em;}
   }
 
   /******** Page Heading ********/
-  .pageHeading { text-align: left; padding: 2em 0  }
+  .pageHeading { text-align: left; padding: 2em 0;float: left;  }
   .pageHeading h1 { }
   .pageHeading h2 {  font-size: 1.8em; font-weight: 700 ; margin: 0 0 10px;}
   .pageHeading h3 { }
   .pageHeading h4 { font-size: 1em; font-weight: 300 ; margin: 0; color: #8c969a }
+
+
+  /************* Button ****************/
+  button { cursor: pointer; padding: 15px 30px !important; color: #fff !important; font-size: .8em; border-radius: 4px !important; line-height: .8em !important; border: 1px solid !important}
+  .buttonContainer { padding: 2em 0; float: right;}
+  .primaryButton { 
+    border-color: #1a2226  !important;
+    background-color: #495762  !important;
+   }
+  .primaryButton:hover { background-color: #fff  !important; color:#495762 !important; }
+  .secButton {
+    border-color:#1a2226  !important;
+    background-color: #fff  !important;
+    color:#495762 !important;
+    }
+  .secButton:hover { background-color: #495762  !important; color:#fff !important;}
+  .actionButton { 
+    border-color: #559a5b  !important;
+    background-color: #66bf74  !important;
+   } 
+   .actionButton:hover { background-color: #559a5b  !important; }
+   .buttonFull { width: 100% !important;}
+   .buttonEqual { min-width: 200px  !important;}
