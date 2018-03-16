@@ -32,11 +32,11 @@
 .mouldingContainer .mouldingCard .mouldingStatus { 
    font-size: .7em;
    text-transform: capitalize;
-   padding: 3px 11px;
+   padding: 0 10px;
    border-radius: 6px;
    background-color: #5857a4;
    color: #fff;
-   line-height: 1em;
+   line-height: 1.6em;
    font-weight: 700;
    float: left;
 }
