@@ -1,5 +1,31 @@
 
-.comingSoonHeading {
-    color: grey;
-    text-transform: capitalize;
+header {
+    background-color: #000;
+    color: #fff; 
+    padding: 1em 0 
+ }
+header #header-con {
+    display: flex;
+    flex-wrap: wrap;
+   }
+header #header-con div { width: 33.33%; }
+header #header-con #site-branding {
+
 }
+header #header-con #site-nav {
+
+}
+header #header-con #site-nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+}
+header #header-con #site-nav ul li {
+    margin: 0 1em;
+    border-bottom: 1px solid #000
+}
+header #header-con #site-nav ul li:hover {border-bottom: 1px solid #fff; }
+header a { color: #fff; text-decoration: none; ; }
