@@ -13,6 +13,7 @@
 }
 .mouldingContainer .mouldingCard .mouldingHover { border: 1px solid #f9fafc; cursor: pointer}
 .mouldingContainer .mouldingCard .mouldingHover:hover { border: 1px solid #d0d6da }
+.mouldingContainer .mouldingCard .mouldingHover.active { border: 1px solid #d0d6da }
 
 .mouldingContainer .mouldingCard .mouldingImage { 
    padding: 0 1.2em 1.2em;

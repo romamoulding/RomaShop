@@ -18,7 +18,8 @@
 <app-moulding-filters></app-moulding-filters>
     <div class="mouldingContainer widthContainer">   
         <div *ngFor="let moulding of mouldings.items" class="mouldingCard">
-                <div class="mouldingHover lighterGrey">
+                <div class="mouldingHover lighterGrey" (click)="active=!active"
+                [ngClass]="{'active': active}">
                     <div class="mouldingStatusCon">
                         <div class="mouldingStatus" *ngIf="moulding.custom_attributes[26].value == 'E'" >NEW</div>
                         <div class="mouldingSelect" >T</div>
